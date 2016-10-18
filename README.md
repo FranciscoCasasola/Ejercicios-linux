@@ -88,11 +88,15 @@ cp -R -u multimedia/* multimedia_test/
 
 ### Ejercicio 10
 
+Delete the directory multimedia/pictures/others. The system must ask for confirmation.
+
 ```console
 rmdir multimedia/pictures/other
 ```
 
 ### Ejercicio 11
+
+Move the file films.txt, which is in multimedia/video, to the directory above, at the same time renaming the file to my_films.txt
 
 ```console
 mv multimedia/video/films.txt multimedia/my_films.txt
