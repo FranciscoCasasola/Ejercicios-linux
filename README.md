@@ -102,3 +102,80 @@ Move the file films.txt, which is in multimedia/video, to the directory above, a
 mv multimedia/video/films.txt multimedia/my_films.txt
 ```
 
+# Ejercicios de Linux 
+
+## Tema 4
+
+### Ejercicio 1
+
+654   		rw-r-xr--
+766   		rwxrw-rw
+777   		rwxrwxrwx
+520  		r-x-w----
+764   		rwxrw-r--
+440   		r--r-----
+
+### Ejercicio 2
+
+Create the groups office1 and office2.
+
+```console
+sudo groupadd office1
+sudo groupadd office2
+```
+
+### Ejercicio 3
+
+Create the users gearoid and paul. These users must belong only to the group
+office1.
+
+```console
+sudo adduser gearoid --ingroup office1
+sudo adduser paul --ingroup office1
+```
+
+### Ejercicio 4
+
+Create the users anna and emma. These users must belong only to the group office2.
+
+```console
+sudo adduser anna –ingroup office2
+sudo adduser emma –ingroup office2
+```
+
+### Ejercicio 5
+
+As user gearoid, create a file named topsecret.txt in his home directory. Only
+this user must have access to this file, both for reading and writing.
+
+```console
+su gearoid
+cd
+touch topsecret
+chmod 600 topsecret
+```
+
+### Ejercicio 6
+
+Create another file named sales.txt, also as user gearoid,. All users in the same group as gearoid must have access to this file, both for reading and writing. The permissions for owner and the rest of users must remain as default. Check that you can modify the file if you access it as user paul.
+
+```console
+touch sales
+chmod 664
+```
+
+### Ejercicio 7
+
+As user anna, create a file named employees.txt. Any user must have access to
+read its content and any user in the same group must have access to read or write to it.
+
+```console
+su anna
+cd
+touch employees
+chmod 664 employees
+```
+
+
+
+
