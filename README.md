@@ -175,6 +175,22 @@ cd
 touch employees
 chmod 664 employees
 ```
+### Ejercicio 8
+
+Create the user student (if it is not yet created). Copy the file employees.txt to the home directory of user student . Change the owner and the group of this file to student.
+
+```console
+sudo adduser student
+sudo cp employees.txt
+cd /home/student
+sudo chown student prueba.txt
+```
+
+### Ejercicio 9
+
+As user paul, copy a program from the directory /usr/bin to the home directory
+with a different name. For example, you can copy xclock with the new name myclock. Take a look at the permissions of this program. Check that you can execute it. Maybe you have to allow users to run programs in the graphic environment. To do that, type xhost + as administrador.
+
 
 
 
